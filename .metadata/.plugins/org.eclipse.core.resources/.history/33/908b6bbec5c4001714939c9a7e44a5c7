@@ -1,0 +1,26 @@
+package demos;
+
+public class FlooringInstallationEstimator {
+
+	public static void main(String[] args) {
+		// Cal the getQuote Function
+		int squareFeet = 645;
+		String floorType = "hardwood";
+		getQuote(squareFeet, floorType);
+		
+	}
+	
+	/*
+	Base Rate: $3.00 per sq ft
+	Carpet: + $.50 per sq ft
+	Hardwood: + $1.50 per sq ft plus and $100 hardware fee
+	If the square feet is over 1500, then apply a 10% discount
+	*/
+	
+	// Define the quote function
+	// Parameters: square feet, floor type
+	private static void getQuote(int squareFeet, String floorType) {
+		System.out.println("QUOTE FUNCTION");
+	}
+
+}

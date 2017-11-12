@@ -1,0 +1,10 @@
+package freddie.frameworks;
+
+public class TestNGTest01 {
+	
+	@Test
+	public void myTest() {
+		System.out.println("My TestNG Test");
+	}
+
+}

@@ -1,0 +1,7 @@
+package freddie.utilities;
+
+public class Screenshot {
+	
+	// This method will take a screenshot of the browser
+
+}

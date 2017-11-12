@@ -1,0 +1,9 @@
+package demos;
+
+public class CafeApp {
+
+	public static void main(String[] args) {
+		String phoneNumber = "6458932743";
+	}
+
+}

@@ -1,0 +1,9 @@
+package demos;
+
+public class SalaryCalculator {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

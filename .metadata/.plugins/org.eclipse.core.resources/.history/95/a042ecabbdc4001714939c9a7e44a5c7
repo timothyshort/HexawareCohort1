@@ -1,0 +1,9 @@
+package demos;
+
+public class WeatherWarningMessage {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

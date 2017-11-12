@@ -1,0 +1,12 @@
+package freddie.frameworks;
+
+import org.testng.annotations.Test;
+
+public class TestNGTest01 {
+	
+	@Test
+	public void myTest() {
+		System.out.println("My TestNG Test");
+	}
+
+}

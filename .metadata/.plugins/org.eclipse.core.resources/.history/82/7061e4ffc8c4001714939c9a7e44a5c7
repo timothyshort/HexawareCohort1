@@ -1,0 +1,17 @@
+package demos;
+
+public class CafeApp {
+
+	public static void main(String[] args) {
+		String phoneNumber = "6458932743";
+		
+		// Call a function to format the phone number
+		formatPhoneNum(phoneNumber);
+	}
+	
+	private static String formatPhoneNum(String phoneNumber) {
+		
+		return null;
+	}
+
+}

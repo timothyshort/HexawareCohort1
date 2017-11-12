@@ -1,0 +1,16 @@
+package freddie.frameworks;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+// Add a Runner
+
+@RunWith(Suite.class)
+
+@Suite.SuiteClasses( {
+	
+}
+public class JUnitSuite {
+
+
+}

@@ -1,0 +1,34 @@
+package freddie.frameworks;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestNGTest01 {
+	
+	@Test(priority = 2)
+	public void mySecondTest() {
+		System.out.println("My Second TestNG Test");
+	}
+	
+	@Test(priority = 1)
+	public void myFirstTest() {
+		System.out.println("My TestNG Test");
+	}
+	
+	@Test(priority = 1)
+	public void myThirdTest() {
+		System.out.println("My TestNG Test");
+	}
+	
+	@BeforeMethod
+	public void setUp() {
+		System.out.println("Setup");
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		System.out.println("Teardown");
+	}
+
+}

@@ -1,0 +1,14 @@
+package demos;
+
+public class StringSearch {
+
+	public static void main(String[] args) {
+		locateLetter("Sample phrase", "a");
+
+	}
+	
+	private static void locateLetter(String phrase, String letter) {
+		
+	}
+
+}

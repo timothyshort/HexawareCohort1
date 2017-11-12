@@ -1,0 +1,32 @@
+package demos;
+
+public class FlooringEstimator {
+
+	public static void main(String[] args) {
+		// Call function from the main
+		int squareFeet = 645;
+		String floorType = "hardwood";
+		getQuote(squareFeet, floorType);
+		
+	}
+	
+	/*
+	Base Rate: $3.00 per sq ft
+	Carpet: No additional charge
+	Laminate: $0.50 per sq ft
+	Hardwood: $1.50 per sq ft plus and $100 hardware fee
+	If the square feet is over 2000, then apply a 10% discount
+	*/
+	
+	// Define our estimator function
+	// Need to know: square feet and floor type
+	private static void getQuote(int sqft, String floor) {
+		System.out.println("Square Feet: " + sqft);
+		System.out.println("Floor Type: " + floor);
+		
+		// Perform estimate calculator
+		double baseRate = 3;
+		double carpetRate = 0;
+	}
+
+}

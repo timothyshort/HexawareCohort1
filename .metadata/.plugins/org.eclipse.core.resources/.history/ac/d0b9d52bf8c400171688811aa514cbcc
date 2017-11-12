@@ -1,0 +1,9 @@
+package freddie.frameworks;
+
+import org.testng.annotations.Test;
+
+public class TestNGLoginTest {
+  @Test
+  public void f() {
+  }
+}

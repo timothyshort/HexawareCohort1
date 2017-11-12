@@ -1,0 +1,9 @@
+package demos;
+
+public class ForLoops {
+
+	public static void main(String[] args) {
+		int n = 5;
+	}
+
+}

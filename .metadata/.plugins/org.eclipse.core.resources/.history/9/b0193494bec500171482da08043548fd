@@ -1,0 +1,11 @@
+package freddie.data;
+
+import freddie.utilities.Database;
+
+public class DatabaseReader {
+
+	public static void main(String[] args) {
+		String[][] dataTable = Database.get("MortgageLoanTestData");
+	}
+
+}

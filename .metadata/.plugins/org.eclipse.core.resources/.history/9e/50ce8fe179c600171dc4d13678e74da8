@@ -1,0 +1,31 @@
+package freddie.basics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import freddie.utilities.DriverFactory;
+
+public class Demo {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = DriverFactory.start();
+		driver.get("https://www.expedia.com/");
+		
+		//driver.findElement(By.id("package-departing-hp-package")).sendKeys("12/20/2017");
+		//Thread.sleep(2000);
+		
+		driver.findElement(By.id("package-departing-hp-package")).click();
+		Thread.sleep(1000);
+		
+		String startMonth = driver.findElement(By.xpath("//*[@id=\"package-departing-wrapper-hp-package\"]/div/div/div[2]/table/caption")).getText();
+		System.out.println(startMonth);
+		if (startMonth.equals("Nov 2017")) {
+			
+		}
+		
+
+	}
+
+}

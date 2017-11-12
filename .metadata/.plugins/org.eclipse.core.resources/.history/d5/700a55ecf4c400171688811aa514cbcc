@@ -1,0 +1,21 @@
+package freddie.frameworks;
+
+import org.testng.annotations.Test;
+
+public class TestNGTest01 {
+	
+	@Test
+	public void mySecondTest() {
+		System.out.println("My Second TestNG Test");
+	}
+	
+	@Test
+	public void myTest() {
+		System.out.println("My TestNG Test");
+	}
+	
+	public void setUp() {
+		System.out.println("Fetching data");
+	}
+
+}

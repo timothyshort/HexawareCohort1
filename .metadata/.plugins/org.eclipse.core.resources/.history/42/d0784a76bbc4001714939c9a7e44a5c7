@@ -1,0 +1,9 @@
+package demos;
+
+public class SalaryCalculator {
+
+	public static void main(String[] args) {
+		// annual salary: hourly rate * hours in week * weeks in year
+	}
+
+}

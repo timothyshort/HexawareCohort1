@@ -1,0 +1,24 @@
+package demos;
+
+public class StringSearch {
+
+	public static void main(String[] args) {
+		locateLetter("Sample phrase", 'a');
+
+	}
+	
+	private static void locateLetter(String phrase, char letter) {
+		int lengthOfString = phrase.length();
+		
+		for (int i = 0; i < lengthOfString; i++) {
+			char subletter = phrase.charAt(i);
+			// String subletter = phrase.substring(i, i+1);
+			// System.out.print(subletter);
+			// System.out.println("DOES " + subletter + " = " + letter + "?");
+			if (subletter == letter) {
+				System.out.println("MATCH AT POSITION: " + (i+1));
+			}
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+package demos;
+
+public class WeatherWarningMessage {
+
+	public static void main(String[] args) {
+		// Convert the temperature from C to F
+		double degreesC = -5;
+		
+		// Print the temperature in F
+		
+		// Test the temperature to print additional warning message
+	}
+
+}

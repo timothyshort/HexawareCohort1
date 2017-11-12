@@ -1,0 +1,10 @@
+package freddie.data;
+
+public class MortgageLoanTest {
+	
+	@BeforeMethod
+	public void setUp() {
+		
+	}
+
+}

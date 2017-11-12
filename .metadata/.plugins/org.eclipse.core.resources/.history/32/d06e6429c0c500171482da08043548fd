@@ -1,0 +1,12 @@
+package freddie.data;
+
+import org.testng.annotations.BeforeMethod;
+
+public class MortgageLoanTest {
+	
+	@BeforeMethod
+	public void setUp() {
+		
+	}
+
+}
