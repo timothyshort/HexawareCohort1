@@ -1,149 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37854" started-at="2017-11-10T03:02:07Z" finished-at="2017-11-10T03:02:45Z">
+  <suite name="Default suite" duration-ms="659" started-at="2017-12-08T02:59:02Z" finished-at="2017-12-08T02:59:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37854" started-at="2017-11-10T03:02:07Z" finished-at="2017-11-10T03:02:45Z">
-      <class name="freddie.data.MortgageLoanTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="5344" started-at="2017-11-09T22:02:09Z" finished-at="2017-11-09T22:02:14Z">
+    <test name="Default test" duration-ms="659" started-at="2017-12-08T02:59:02Z" finished-at="2017-12-08T02:59:02Z">
+      <class name="freddie.data.NewAccountTest">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="641" started-at="2017-12-07T21:59:02Z" data-provider="getxlData" finished-at="2017-12-07T21:59:02Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.testng.internal.reflect.ReflectionRecipes.isInstanceOf(ReflectionRecipes.java:71)
+	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:248)
+	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:233)
+	at org.testng.internal.reflect.DirectMethodMatcher.match(DirectMethodMatcher.java:37)
+	at org.testng.internal.reflect.AbstractNodeMethodMatcher.hasConformance(AbstractNodeMethodMatcher.java:26)
+	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
+	at org.testng.internal.reflect.DataProviderMethodMatcher.hasConformance(DataProviderMethodMatcher.java:24)
+	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:40)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1301)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1195)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mortgageLoanAppTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="mortgageLoanAppTest" duration-ms="3649" started-at="2017-11-09T22:02:14Z" data-provider="getTestData" finished-at="2017-11-09T22:02:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5000]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CITIBankNJ1009]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[CitiSellerBank]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[TD5555555]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mortgageLoanAppTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="644" started-at="2017-11-09T22:02:18Z" finished-at="2017-11-09T22:02:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="4773" started-at="2017-11-09T22:02:19Z" finished-at="2017-11-09T22:02:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mortgageLoanAppTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="mortgageLoanAppTest" duration-ms="3640" started-at="2017-11-09T22:02:23Z" data-provider="getTestData" finished-at="2017-11-09T22:02:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[WellsFargoCA1009]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[WellsFargoSeller]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[CT5454454]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mortgageLoanAppTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="607" started-at="2017-11-09T22:02:27Z" finished-at="2017-11-09T22:02:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="4603" started-at="2017-11-09T22:02:28Z" finished-at="2017-11-09T22:02:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mortgageLoanAppTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="mortgageLoanAppTest" duration-ms="3522" started-at="2017-11-09T22:02:32Z" data-provider="getTestData" finished-at="2017-11-09T22:02:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[BACVA1009]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[BAC988908989]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[WF898989]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mortgageLoanAppTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="611" started-at="2017-11-09T22:02:36Z" finished-at="2017-11-09T22:02:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="setUp" is-config="true" duration-ms="4631" started-at="2017-11-09T22:02:36Z" finished-at="2017-11-09T22:02:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mortgageLoanAppTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="mortgageLoanAppTest" duration-ms="3585" started-at="2017-11-09T22:02:41Z" data-provider="getTestData" finished-at="2017-11-09T22:02:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ChaseDC1009]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chase676767]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[BOA565656]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mortgageLoanAppTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:freddie.data.MortgageLoanTest@5d5eef3d]" name="tearDown" is-config="true" duration-ms="644" started-at="2017-11-09T22:02:45Z" finished-at="2017-11-09T22:02:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- freddie.data.MortgageLoanTest -->
+        </test-method> <!-- test -->
+      </class> <!-- freddie.data.NewAccountTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

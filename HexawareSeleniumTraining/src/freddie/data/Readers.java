@@ -4,11 +4,26 @@ import java.util.List;
 
 import freddie.utilities.CSV;
 import freddie.utilities.Database;
+import freddie.utilities.Excel;
+import freddie.utilities.Playground;
 
 public class Readers {
 
 	public static void main(String[] args) {
-		readCSV();
+		readExcel();
+	}
+	
+	private static void readExcel() {
+		System.out.println("Reading Excel");
+		
+		String filename = "C:\\HexawareTraining\\Cohort101\\TestData\\NewAccountData.xlsx";
+		String[][] dataTable = Excel.getXLSX(filename);
+		
+		for (int i=0; i < dataTable.length; i++) {
+			for (int j=0; j < dataTable[0].length; j++) {
+				System.out.println(dataTable[i][j]);
+			}
+		}
 	}
 	
 	private static void readCSV() {
