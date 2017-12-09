@@ -6,11 +6,22 @@ import freddie.utilities.CSV;
 import freddie.utilities.Database;
 import freddie.utilities.Excel;
 import freddie.utilities.Playground;
+import freddie.utilities.XML;
 
 public class Readers {
 
 	public static void main(String[] args) {
-		readExcel();
+		readXML();
+	}
+	
+	private static void readXML() {
+		String[][] data = XML.get("C:\\HexawareTraining\\Cohort101\\TestData\\ShoppingCartData.xml");
+
+		for (int i=0; i < data.length; i++) {
+			for (int j=0; j < data[0].length; j++) {
+				System.out.println(data[i][j]);
+			}
+		}		
 	}
 	
 	private static void readExcel() {
