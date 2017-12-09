@@ -1,50 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="659" started-at="2017-12-08T02:59:02Z" finished-at="2017-12-08T02:59:02Z">
+  <suite name="Default suite" duration-ms="42253" started-at="2017-12-09T01:27:33Z" finished-at="2017-12-09T01:28:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="659" started-at="2017-12-08T02:59:02Z" finished-at="2017-12-08T02:59:02Z">
+    <test name="Default test" duration-ms="42253" started-at="2017-12-09T01:27:33Z" finished-at="2017-12-09T01:28:16Z">
       <class name="freddie.data.NewAccountTest">
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="641" started-at="2017-12-07T21:59:02Z" data-provider="getxlData" finished-at="2017-12-07T21:59:02Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.testng.internal.reflect.ReflectionRecipes.isInstanceOf(ReflectionRecipes.java:71)
-	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:248)
-	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:233)
-	at org.testng.internal.reflect.DirectMethodMatcher.match(DirectMethodMatcher.java:37)
-	at org.testng.internal.reflect.AbstractNodeMethodMatcher.hasConformance(AbstractNodeMethodMatcher.java:26)
-	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
-	at org.testng.internal.reflect.DataProviderMethodMatcher.hasConformance(DataProviderMethodMatcher.java:24)
-	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:40)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1301)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1195)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="setup" is-config="true" duration-ms="5451" started-at="2017-12-08T20:27:33Z" finished-at="2017-12-08T20:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="787" started-at="2017-12-08T20:27:39Z" data-provider="getxlData" finished-at="2017-12-08T20:27:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fisher]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[White]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Fisher.White@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[FWpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5.812924712E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="teardown" is-config="true" duration-ms="2605" started-at="2017-12-08T20:27:40Z" finished-at="2017-12-08T20:27:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="setup" is-config="true" duration-ms="4751" started-at="2017-12-08T20:27:42Z" finished-at="2017-12-08T20:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="816" started-at="2017-12-08T20:27:47Z" data-provider="getxlData" finished-at="2017-12-08T20:27:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kendall]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bahn]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kendall.Bahn@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[KBpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4.147185226E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="teardown" is-config="true" duration-ms="2582" started-at="2017-12-08T20:27:48Z" finished-at="2017-12-08T20:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="setup" is-config="true" duration-ms="4908" started-at="2017-12-08T20:27:50Z" finished-at="2017-12-08T20:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="843" started-at="2017-12-08T20:27:55Z" data-provider="getxlData" finished-at="2017-12-08T20:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Stones]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sam.Stones@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[SSpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.624951383E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="teardown" is-config="true" duration-ms="2629" started-at="2017-12-08T20:27:56Z" finished-at="2017-12-08T20:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="setup" is-config="true" duration-ms="4969" started-at="2017-12-08T20:27:59Z" finished-at="2017-12-08T20:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="783" started-at="2017-12-08T20:28:04Z" data-provider="getxlData" finished-at="2017-12-08T20:28:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Daniel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Polar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Daniel.Polar@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[DPpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3.959076778E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="teardown" is-config="true" duration-ms="2606" started-at="2017-12-08T20:28:05Z" finished-at="2017-12-08T20:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="setup" is-config="true" duration-ms="4923" started-at="2017-12-08T20:28:07Z" finished-at="2017-12-08T20:28:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="test" duration-ms="790" started-at="2017-12-08T20:28:12Z" data-provider="getxlData" finished-at="2017-12-08T20:28:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rosie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Stans]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Rosie.Stans@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RSpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8.83612666E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:freddie.data.NewAccountTest@9629756]" name="teardown" is-config="true" duration-ms="2571" started-at="2017-12-08T20:28:13Z" finished-at="2017-12-08T20:28:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- freddie.data.NewAccountTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

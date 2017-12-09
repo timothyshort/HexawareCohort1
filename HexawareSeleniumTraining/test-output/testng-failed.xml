@@ -6,7 +6,7 @@
       <class name="freddie.data.NewAccountTest">
         <methods>
           <include name="teardown"/>
-          <include name="test"/>
+          <include name="test" invocation-numbers="1 3 4"/>
           <include name="setup"/>
         </methods>
       </class> <!-- freddie.data.NewAccountTest -->

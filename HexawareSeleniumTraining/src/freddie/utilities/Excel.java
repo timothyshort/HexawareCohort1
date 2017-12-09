@@ -31,8 +31,6 @@ public class Excel {
 			int numRows = xlSheet.getLastRowNum() + 1;
 			int numCols = xlSheet.getRow(0).getLastCellNum();
 			dataTable = new String[numRows][numCols];
-			System.out.println("There are " + numRows + " test records");
-			System.out.println("There are " + numCols + " data fields");
 			
 			// Iterate through the data
 			for (int i=0; i < numRows; i++) {

@@ -26,12 +26,13 @@ public class NewAccountTest {
 	}
 	
 	@AfterMethod
-	public void teardown() {
+	public void teardown() throws InterruptedException {
+		Thread.sleep(2000);
 		driver.quit();
 	}
 	
 	@Test(dataProvider = "getxlData")
-	public void test(String firstName, String lastName, String gender, String email, String password, String phoneNumber, String country, boolean weeklyEmail, boolean monthlyEmail, boolean occasionalEmail) {
+	public void test(String firstName, String lastName, String gender, String email, String password, String phoneNumber, String country, String weeklyEmail, String monthlyEmail, String occasionalEmail) {
 		
 		String name = firstName + " " + lastName;
 		String verifyPassword = password;
@@ -39,7 +40,7 @@ public class NewAccountTest {
 		driver.findElement(By.id("MainContent_txtFirstName")).sendKeys(name);
 		driver.findElement(By.id("MainContent_txtEmail")).sendKeys(email);
 		driver.findElement(By.id("MainContent_txtHomePhone")).sendKeys(phoneNumber);
-		new Select(driver.findElement(By.id("MainContent_menuCountry"))).selectByValue(country);
+		new Select(driver.findElement(By.id("MainContent_menuCountry"))).selectByVisibleText(country);
 		driver.findElement(By.id("MainContent_txtPassword")).sendKeys(password);
 		driver.findElement(By.id("MainContent_txtVerifyPassword")).sendKeys(verifyPassword);
 		
@@ -65,7 +66,8 @@ public class NewAccountTest {
 	
 	@DataProvider
 	public Object[][] getxlData() {
-		return Excel.getXLSX(GlobalSettings.TESTDATA + "NewAccountData.xlsx");
+		// return Excel.getXLSX(GlobalSettings.TESTDATA + "NewAccountData.xlsx");
+		return Excel.getXLS(GlobalSettings.TESTDATA + "NewAccountData_XLS.xls");
 	}
 
 }

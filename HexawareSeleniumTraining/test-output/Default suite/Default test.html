@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 07 21:59:02 EST 2017</td>
+<td>Started on:</td><td>Fri Dec 08 20:27:33 EST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (659 ms)</td>
+<tr><td>Total time:</td><td>42 seconds (42253 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,75 +67,36 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='freddie.data.NewAccountTest.test()'><b>test</b><br>Test class: freddie.data.NewAccountTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.testng.internal.reflect.ReflectionRecipes.isInstanceOf(ReflectionRecipes.java:71)
-	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:248)
-	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:233)
-	at org.testng.internal.reflect.DirectMethodMatcher.match(DirectMethodMatcher.java:37)
-	at org.testng.internal.reflect.AbstractNodeMethodMatcher.hasConformance(AbstractNodeMethodMatcher.java:26)
-	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
-	at org.testng.internal.reflect.DataProviderMethodMatcher.hasConformance(DataProviderMethodMatcher.java:24)
-	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:40)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1301)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1195)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace896644936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace896644936'><pre>java.lang.NullPointerException
-	at org.testng.internal.reflect.ReflectionRecipes.isInstanceOf(ReflectionRecipes.java:71)
-	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:248)
-	at org.testng.internal.reflect.ReflectionRecipes.exactMatch(ReflectionRecipes.java:233)
-	at org.testng.internal.reflect.DirectMethodMatcher.match(DirectMethodMatcher.java:37)
-	at org.testng.internal.reflect.AbstractNodeMethodMatcher.hasConformance(AbstractNodeMethodMatcher.java:26)
-	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
-	at org.testng.internal.reflect.DataProviderMethodMatcher.hasConformance(DataProviderMethodMatcher.java:24)
-	at org.testng.internal.reflect.AbstractMethodMatcher.conforms(AbstractMethodMatcher.java:27)
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:40)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1301)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1195)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='freddie.data.NewAccountTest.test()'><b>test</b><br>Test class: freddie.data.NewAccountTest<br>Parameters: Fisher, White, Male, Fisher.White@testmail.com, FWpass, 5.812924712E9, Canada, TRUE, FALSE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>freddie.data.NewAccountTest@9629756</td></tr>
+<tr>
+<td title='freddie.data.NewAccountTest.test()'><b>test</b><br>Test class: freddie.data.NewAccountTest<br>Parameters: Kendall, Bahn, Female, Kendall.Bahn@testmail.com, KBpass, 4.147185226E9, United States, FALSE, TRUE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>freddie.data.NewAccountTest@9629756</td></tr>
+<tr>
+<td title='freddie.data.NewAccountTest.test()'><b>test</b><br>Test class: freddie.data.NewAccountTest<br>Parameters: Sam, Stones, Male, Sam.Stones@testmail.com, SSpass, 9.624951383E9, Canada, FALSE, TRUE, TRUE</td>
+<td></td>
+<td>0</td>
+<td>freddie.data.NewAccountTest@9629756</td></tr>
+<tr>
+<td title='freddie.data.NewAccountTest.test()'><b>test</b><br>Test class: freddie.data.NewAccountTest<br>Parameters: Daniel, Polar, Male, Daniel.Polar@testmail.com, DPpass, 3.959076778E9, United States, FALSE, FALSE, FALSE</td>
+<td></td>
+<td>0</td>
+<td>freddie.data.NewAccountTest@9629756</td></tr>
+<tr>
+<td title='freddie.data.NewAccountTest.test()'><b>test</b><br>Test class: freddie.data.NewAccountTest<br>Parameters: Rosie, Stans, Female, Rosie.Stans@testmail.com, RSpass, 8.83612666E9, United States, TRUE, FALSE, TRUE</td>
+<td></td>
 <td>0</td>
 <td>freddie.data.NewAccountTest@9629756</td></tr>
 </table><p>

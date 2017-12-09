@@ -21,4 +21,20 @@ public class Checkbox {
 		}
 	}
 	
+	// This method receives a checkbox value and checkbox element and performs algorithm to check or uncheck
+		public static void choose(WebDriver driver, String checkBox, WebElement checkboxElement) {
+			// Do we want the checkbox checked?
+			if (checkBox.equalsIgnoreCase("True")) {
+				// Is the checkbox not checked?
+				if (!checkboxElement.isSelected()) {
+					checkboxElement.click();
+				}
+			}
+			else {
+				if (checkboxElement.isSelected()) {
+					checkboxElement.click();
+				}
+			}
+		}
+	
 }
