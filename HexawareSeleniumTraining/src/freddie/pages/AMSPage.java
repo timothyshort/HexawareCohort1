@@ -25,9 +25,22 @@ public class AMSPage {
 		PageFactory.initElements(browser, this);
 	}
 	
+	// This function does everything in one step
 	public void login(String username, String password) {
 		usernameText.sendKeys(username);
 		passwordText.sendKeys(password);
+		loginButton.click();
+	}
+	
+	public void setUsername(String username) {
+		usernameText.sendKeys(username);
+	}
+	
+	public void setPassword(String password) {
+		passwordText.sendKeys(password);
+	}
+	
+	public void clickLogin() {
 		loginButton.click();
 	}
 
