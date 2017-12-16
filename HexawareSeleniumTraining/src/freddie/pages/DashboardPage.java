@@ -1,5 +1,6 @@
 package freddie.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,6 +38,10 @@ public class DashboardPage {
 	
 	public String pageTitle() {
 		return driver.getTitle();
+	}
+	
+	public String welcomeMessage() {
+		return driver.findElement(By.xpath("//*[@id=\"ctl01\"]/div[3]/div[2]/div/div[1]/h1")).getText();
 	}
 
 }

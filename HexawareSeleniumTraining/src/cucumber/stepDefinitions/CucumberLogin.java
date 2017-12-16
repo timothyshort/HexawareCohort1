@@ -1,9 +1,13 @@
 package cucumber.stepDefinitions;
 
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -12,12 +16,14 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import freddie.pages.AMSPage;
+import freddie.pages.DashboardPage;
 import freddie.utilities.DriverFactory;
 import freddie.utilities.GlobalSettings;
 
 public class CucumberLogin {
 	WebDriver driver;
 	AMSPage AMSPage;
+	DashboardPage DashboardPage;
 	
 	@Before
 	public void setup() {
@@ -37,9 +43,28 @@ public class CucumberLogin {
 		AMSPage = new AMSPage(driver);
 	}
 	
+	// Using data tables:
+	// 1. We do NOT need to update our step annotation's arguments
 	@When("^the user enters correct username and password$")
-	public void the_user_enters_correct_username_and_password() {
-		AMSPage.login("tim@testemail.com", "trpass");
+	public void the_user_enters_correct_username_and_password(DataTable credentials) {
+		/*
+		// Extract data table into Map
+		Map<String, String> data = credentials.asMap(String.class, String.class);
+		
+		// Parse map into local variables
+		String username = data.get("Username");
+		String password = data.get("Password");
+		*/
+		
+		// Extract data table into List
+		List<List<String>> data = credentials.raw();
+		
+		// Parse list into local variables
+		String username = data.get(0).get(0);
+		String password = data.get(0).get(1);
+		
+		// Perform action
+		AMSPage.login(username, password);
 		
 		/*
 		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys("tim@testemail.com");
@@ -54,10 +79,23 @@ public class CucumberLogin {
 		Assert.assertTrue(response.contains("balance"));
 	}
 	
-	@When("^the user enters bad username$")
-	public void the_user_enters_bad_username() {
-		AMSPage.setUsername("tim@freddiemail.com");
+	// 1. Update step annotation's argument to include the regular expression:  \"(.*)\"
+	// 2. Parameterize the function to receive data
+	@When("^the user enters bad \"(.*)\"$")
+	public void the_user_enters_bad_username(String email) {
+		AMSPage.setUsername(email);
 		// driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys("tim@freddiemail.com");
+	}
+	
+	@When("^the user enters \"(.*)\" and \"(.*)\"$")
+	public void the_user_enters_username_and_password(String username, String password) {
+		AMSPage.login(username, password);
+	}
+	
+	@Then("^the user receives a welcome message")
+	public void dashboard_welcome_message() {
+		DashboardPage = new DashboardPage(driver);
+		Assert.assertTrue(DashboardPage.welcomeMessage().contains("Welcome back!"));
 	}
 
 	@When("^the user enters bad password$")

@@ -8,14 +8,27 @@ Feature: The SDET Training AMS Application
 Scenario: the user should be able to login and view their balance
 	Given the user is on the AMS page
 	When the user enters correct username and password
+	#DataTable into list
+	| tim@testemail.com | trpass |
 	#Then the user should be able to view their balance
 	Then the user should be able to update their subscription
 	And the user should be able to change their password
 	And the user should be able to cancel their account
 	
+Scenario Outline: the user should receive a welcome message when they login
+	Given the user is on the AMS page
+	When the user enters "<Username>" and "<Password>"
+	Then the user receives a welcome message
+
+Examples:
+| Username | Password |
+| tim@testemail.com | trpass |
+| ep@testemail.com | ep1password |
+| sw@testemail.com | sw2password |
+	
 Scenario: the user should receive a notification of a failed login
 	Given the user is on the AMS page
-	When the user enters bad username
+	When the user enters bad "tim@hexaware.com"
 	And the user enters bad password
 	And the user clicks login button
 	Then the user should not be able to log in
