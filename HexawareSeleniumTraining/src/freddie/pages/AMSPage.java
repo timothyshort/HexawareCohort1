@@ -27,16 +27,18 @@ public class AMSPage {
 	
 	// This function does everything in one step
 	public void login(String username, String password) {
-		usernameText.sendKeys(username);
-		passwordText.sendKeys(password);
-		loginButton.click();
+		setUsername(username);
+		setPassword(password);
+		clickLogin();
 	}
 	
 	public void setUsername(String username) {
+		usernameText.clear();
 		usernameText.sendKeys(username);
 	}
 	
 	public void setPassword(String password) {
+		passwordText.clear();
 		passwordText.sendKeys(password);
 	}
 	

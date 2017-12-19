@@ -10,10 +10,19 @@ Scenario: the user should be able to login and view their balance
 	When the user enters correct username and password
 	#DataTable into list
 	| tim@testemail.com | trpass |
-	#Then the user should be able to view their balance
 	Then the user should be able to update their subscription
 	And the user should be able to change their password
 	And the user should be able to cancel their account
+	
+Scenario: the user should be able to attempt a login after a failed attempt
+	Given the user is on the AMS page
+	When the user enters set of username and password
+	#DataTable into Map
+	| Username | Password |
+	| tim@hexaware.com | password |
+	| tim@freddie.com | password |
+	| tim@testemail.com | trpass |
+	Then the user receives a welcome message
 	
 Scenario Outline: the user should receive a welcome message when they login
 	Given the user is on the AMS page

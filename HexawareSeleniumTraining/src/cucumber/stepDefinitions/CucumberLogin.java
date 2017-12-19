@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import cucumber.api.DataTable;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -47,15 +48,6 @@ public class CucumberLogin {
 	// 1. We do NOT need to update our step annotation's arguments
 	@When("^the user enters correct username and password$")
 	public void the_user_enters_correct_username_and_password(DataTable credentials) {
-		/*
-		// Extract data table into Map
-		Map<String, String> data = credentials.asMap(String.class, String.class);
-		
-		// Parse map into local variables
-		String username = data.get("Username");
-		String password = data.get("Password");
-		*/
-		
 		// Extract data table into List
 		List<List<String>> data = credentials.raw();
 		
@@ -71,6 +63,21 @@ public class CucumberLogin {
 		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys("trpass");
 		clickLogin();
 		*/
+	}
+	
+	@When("^the user enters set of username and password$")
+	public void the_user_enters_set_of_username_and_password(DataTable credentials) throws InterruptedException {
+		// Extract data table into Map
+		for (Map<String, String> data : credentials.asMaps(String.class, String.class)) {
+		
+			// Parse map into local variables
+			String username = data.get("Username");
+			String password = data.get("Password");
+			
+			// Perform action
+			AMSPage.login(username, password);
+			Thread.sleep(1500);
+		}
 	}
 	
 	@Then("^the user should be able to view their balance$")
