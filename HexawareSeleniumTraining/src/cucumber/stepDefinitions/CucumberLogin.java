@@ -26,17 +26,6 @@ public class CucumberLogin {
 	AMSPage AMSPage;
 	DashboardPage DashboardPage;
 	
-	@Before
-	public void setup() {
-		// Step 1: Initialize Driver
-		driver = DriverFactory.start();
-	}
-	
-	@After
-	public void teardown() {
-		driver.quit();
-	}
-	
 	@Given("^the user is on the AMS page$")
 	public void the_user_is_on_the_AMS_page() {
 		// Step 2: Navigate to AMS page
