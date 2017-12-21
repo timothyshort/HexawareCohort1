@@ -20,9 +20,10 @@ import freddie.pages.AMSPage;
 import freddie.pages.DashboardPage;
 import freddie.utilities.DriverFactory;
 import freddie.utilities.GlobalSettings;
+import cucumber.stepDefinitions.Hooks;
 
 public class CucumberLogin {
-	WebDriver driver;
+	WebDriver driver = Hooks.driver;
 	AMSPage AMSPage;
 	DashboardPage DashboardPage;
 	

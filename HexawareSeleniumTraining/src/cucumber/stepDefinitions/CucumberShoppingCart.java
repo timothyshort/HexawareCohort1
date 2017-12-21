@@ -2,19 +2,22 @@ package cucumber.stepDefinitions;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
+
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import freddie.utilities.DriverFactory;
+import freddie.utilities.GlobalSettings;
 
 public class CucumberShoppingCart {
-	// WebDriver driver;
+	WebDriver driver = Hooks.driver;
 	
 	@Given("^the user is on the shopping cart home page$")
 	public void the_user_is_on_the_shopping_cart_home_page() throws Throwable {
 	    System.out.println("User is on home page");
-	    // driver = DriverFactory.start();
+	    driver.get(GlobalSettings.SHOPPINGCARTURL);
 	}
 
 	@When("^the user adds an item to the shopping cart$")

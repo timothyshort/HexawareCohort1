@@ -7,12 +7,22 @@ import cucumber.api.java.Before;
 import freddie.utilities.DriverFactory;
 
 public class Hooks {
-	WebDriver driver;
+	public static WebDriver driver;
+	
+	@Before("@ShopCart")
+	public void beforeShopCart() {
+		
+	}
 	
 	@Before(order = 1)
 	public void initializeBrowser() {
 		driver = DriverFactory.start();
 		System.out.println("Initializing WebDriver object");
+	}
+	
+	@Before("@FunctionalTest")
+	public void beforeFunctionalTests() {
+		System.out.println("Running before functional tests");
 	}
 	
 	@Before(order = 0)
