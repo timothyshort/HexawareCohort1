@@ -4,7 +4,7 @@ Feature: The SDET Training AMS Application
 	So that, I can view my account information
 	
 #Define Scenario: a specific instance or situation of the feature
-#Scenarios use a Given-When-Then structure / outline
+#Scenarios use a Given-When-Then outline
 Scenario: the user should be able to login and view their balance
 	Given the user is on the AMS page
 	When the user enters correct username and password
